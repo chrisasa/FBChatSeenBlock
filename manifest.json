@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Facebook Hidden Chat",
+    "description": "Read messages without sender be noticed",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon1.png",
+        "default_title": "Facebook chat read status blocker"
+    },
+    "icons":{
+        "128" : "icon1.png",
+        "48" : "icon1.png",
+        "24" : "icon1.png",
+        "16" : "icon1.png"
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://*.facebook.com/",
+        "activeTab"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
